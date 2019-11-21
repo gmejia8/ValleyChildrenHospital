@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script src="myscript.js"></script>
+</head>
+<body>
+  <center>
+    <img src="./assets/VCH.png">
+    <h2>Welcome to Valley Children's hospital</h2>
+    <h3>Please Login</h3>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Patient Login</button> <br>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Doctor Login</button>
+  </center>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('idO1').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./assets/VCH.png" alt="Logo" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter USername" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psq" required>
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember Me
+                </label>
+            </div>
+
+            <div class="container" style="background-color: #f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+</body> 
+</html>
