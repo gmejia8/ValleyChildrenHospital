@@ -55,11 +55,10 @@ function renderPatientLogIn(doc){
 // });
 
 
-$(document).ready(function () {
+
   
   
-    $("#btn").click(function (event) {
-          
+function visualacuity(){
     webgazer.setRegression('ridge').setTracker('clmtrackr')
     .setGazeListener(function (data, elapsedTime) {
               if (data == null) {
@@ -68,7 +67,26 @@ $(document).ready(function () {
               xprediction = data.x; //these x coordinates are relative to the viewport 
               yprediction = data.y; //these y coordinates are relative to the viewport
           }).begin().showPredictionPoints(true);
-      
-        })
+        }
+       
         
-      });
+  function Eyemovement(){
+    webgazer.setRegression('ridge').setTracker('clmtrackr')
+    .setGazeListener(function (data, elapsedTime) {
+              if (data == null) {
+                  return;
+              }
+              xprediction = data.x; //these x coordinates are relative to the viewport 
+              yprediction = data.y; //these y coordinates are relative to the viewport
+          }).begin().showPredictionPoints(true);
+        }
+function Pulminary(){
+    webgazer.setRegression('ridge').setTracker('clmtrackr')
+    .setGazeListener(function (data, elapsedTime) {
+              if (data == null) {
+                  return;
+              }
+              xprediction = data.x; //these x coordinates are relative to the viewport 
+              yprediction = data.y; //these y coordinates are relative to the viewport
+          }).begin().showPredictionPoints(true);
+        }
