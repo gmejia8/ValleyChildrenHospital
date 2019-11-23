@@ -61,17 +61,3 @@ window.onclick = function(event){
     }
     console.log('start');
 }
-
-    // //deleting data
-    // cross.addEventListener('click', (e) => {
-
-    //     e.stopPropagation();
-    //     let id = doc.id;
-    //     db.collection('PatientLogIn').doc(id).delete();
-
-    // })
-
-
-
-
-
