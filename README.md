@@ -15,3 +15,12 @@ Run setup.php
 ## Viewing web app 
 1. localhot or {ip_address}
 
+# vch folder must be unzipped 
+- Social Login 
+- Messaging 
+- Connect with doctors
+- Follow Doctors 
+- Create a profile 
+- Notes to self
+- Public Notes 
+
