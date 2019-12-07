@@ -73,6 +73,7 @@ function visualacuity(){
        
         
   function Eyemovement(){
+      console.log('here');
     webgazer.setRegression('ridge').setTracker('clmtrackr')
     .setGazeListener(function (data, elapsedTime) {
               if (data == null) {

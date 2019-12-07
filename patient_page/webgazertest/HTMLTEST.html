@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src = "code.js" ></script>
+    <script src="webgazer.js" type="text/javascript" > 
+    </script>
+    <base target="_top">
+  </head>
+  <body>
+    
+    <button id = "btn" onclick="playVideo()" >Play Video </button> 
+    
+  
+    <video id = "myvid"  width = 100%;
+    height: auto;>
+  <source src = "../Video.mp4" type = "video/mp4">
+  </video>
+  <script>
+  
+  var myvideo = document.getElementById("myvid");
+  
+  function playVideo(){
+  console.log("Video here");
+  myvideo.play();
+  //myvideo.requestFullscreen();
+  console.log('video end');
+  
+  }
+  
+  </script>
+    
