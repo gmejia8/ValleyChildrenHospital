@@ -7,20 +7,35 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body background = "assets/images/questionmark_blue.png">
+<body background = "assets/images/searchGlass.png">
   <div class="header">
     <div class="row">
-      <h1>Are you a psychic?</h1>
+      <h1>Visual Acuity Exam</h1>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <h3>Guess what letter I'm thinking of...</h3>
+      <h3>Match the letter to your key choice.</h3>
     </div>
+
     <div class="row">
       <div class="col-md-12, info">
-        Wins:
+        Letter
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="populate" id="computerChoice">
+          0
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12, info">
+        Correct:
       </div>
     </div>
 
@@ -34,7 +49,7 @@
 
     <div class="row">
       <div class="col-md-12, info">
-        Losses:
+        Incorrect:
       </div>
     </div>
 
@@ -42,34 +57,6 @@
       <div class="col-md-12">
         <div class="populate" id="lossCount">
           0
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12, info">
-        Guesses Remaining:
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="populate" id="guessesRemaining">
-          10
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12, info">
-        Your Guesses:
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="populate" id="guessedLetters">
-          guesses..
         </div>
       </div>
     </div>
