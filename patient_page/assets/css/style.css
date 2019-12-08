@@ -37,3 +37,11 @@ h3 {
 .info {
   font-size: 24px;
 }
+
+:root {
+  --fontSize: 0px;
+}
+
+.random-font{
+  font-size: var(--fontSize);
+}
