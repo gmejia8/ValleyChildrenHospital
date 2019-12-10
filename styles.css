@@ -12,7 +12,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: blue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -20,7 +20,10 @@ button {
   cursor: pointer;
   width: 100%;
 }
-
+a{
+  
+  color:white;
+}
 button:hover {
   opacity: 0.8;
 }
