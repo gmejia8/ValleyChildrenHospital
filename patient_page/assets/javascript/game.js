@@ -1,4 +1,4 @@
-//define variables for game play
+//define variables for exam
 var winCount = 0;
 var lossCount = 0;
 var letterFont = 180;
@@ -62,8 +62,9 @@ document.onkeyup = function(event) {
       document.getElementById("computerChoice").innerHTML = computerChoice;
     }
 
-    //exam reset and end for left eye, reset all values
+    //exam reset conditions for incorrect exam inputs
     if (lossCount == 3) {
+
       if (round == 1){
       alert("Thank you for taking the exam you scoreed " + patientScore + " on your left eye, now cover your left eye the exam will reset");
       round++
@@ -76,6 +77,7 @@ document.onkeyup = function(event) {
       //to display value in html
       document.getElementById("lossCount").innerHTML = lossCount;
       }
+
       if (round == 2){
       alert("Thank you for taking the exam you scoreed " + patientScore + " on your right eye, the exam is now finished and will be submitted to your doctor, feel free to take the exam again");
       //reset round for user to try the exam again
@@ -96,16 +98,19 @@ document.onkeyup = function(event) {
     if (computerChoice === userChoice) {
       winCount++;
       console.log("Correct");
-      //alert("Correct");
+      //to display value in html
       document.getElementById("winCount").innerHTML = winCount;
-      
+      //random letter
       randomIndex = Math.floor(Math.random() * alphabet.length);
       computerChoice = alphabet[randomIndex];
       console.log(computerChoice);
+      //to display value in html
       document.getElementById("computerChoice").innerHTML = computerChoice;
     }
 
+    //for debugging
     console.log(winCount);
+
     //exam level increase
     switch(winCount) {
       case 1:
@@ -160,8 +165,7 @@ document.onkeyup = function(event) {
         break;
         
       case 36:
-          //to change the font size value in css
-        //root.style.setProperty('--fontSize', (letterFont - 170) + "px");
+        //update patient score
         patientScore = "20/20";
         console.log(patientScore);
 
