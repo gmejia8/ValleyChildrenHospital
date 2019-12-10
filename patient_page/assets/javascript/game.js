@@ -184,7 +184,17 @@ document.onkeyup = function(event) {
         }
         if (round == 2){
           alert("Congratulations you scored " + patientScore + " on your right eye, the exam is now finished and will be submitted to your doctor, feel free to take the exam again");
-          }
+          //reset round for user to try the exam again
+          round = 1;
+          //to reset letter font
+          root.style.setProperty('--fontSize', (letterFont) + "px");
+          winCount = 0;
+          //to display value in html
+          document.getElementById("winCount").innerHTML = winCount;
+          lossCount = 0;
+          //to display value in html
+          document.getElementById("lossCount").innerHTML = lossCount;
+        }
         break;
 
       default:
