@@ -1,3 +1,5 @@
+//Developed by Gabriel Mejia
+
 //define variables for exam
 var winCount = 0;
 var lossCount = 0;
