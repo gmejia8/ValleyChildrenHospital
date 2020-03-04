@@ -47,7 +47,7 @@ document.onkeyup = function(event) {
 
 
     // if user is incorrect
-    if (computerChoice != userChoice) {
+    if (computerChoice != userChoice && userChoice in alphabet) {
       lossCount++;
       //to display value in html
       document.getElementById("lossCount").innerHTML = lossCount;
@@ -97,7 +97,7 @@ document.onkeyup = function(event) {
 
 
     // compares the randomly selected computer choice and user choice
-    if (computerChoice === userChoice) {
+    if (computerChoice === userChoice && userChoice in alphabet) {
       winCount++;
       console.log("Correct");
       //to display value in html
